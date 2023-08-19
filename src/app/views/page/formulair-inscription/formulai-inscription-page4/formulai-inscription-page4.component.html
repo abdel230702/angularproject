@@ -1,0 +1,252 @@
+<div class="main">
+    <form [formGroup]="fourmulairInscriptionForm" (ngSubmit)="save()">
+        <br>
+        <img src="assets/uh2clogo.png" alt="uh2c logo">
+        <br>
+        <br>
+        <div class="titel">
+            <h4>Informations Personnelles - version 2</h4>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>Nom</label>
+                        <input type="text" class="form-control" placeholder="Nom" formControlName="nomFr">
+                        <br>
+                        <label for="exampleInputEmail1">Prenom</label>
+                        <input type="email" class="form-control" placeholder="Prenom" formControlName="prenomFr">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group ar-info">
+                        <label>الاسم الشخصي</label>
+                        <input type="text" class="form-control" placeholder="الاسم الشخصي" formControlName="prenomAr">
+                        <br>
+                        <label for="exampleInputEmail1">الاسم العائلي</label>
+                        <input type="email" class="form-control" placeholder="الاسم العائلي" formControlName="nomAr">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>CIN</label>
+                        <input type="text" class="form-control" placeholder="CIN" formControlName="cin">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>SEXE</label>
+                        <select class="form-select" formControlName="sex" placeholder="Sex">
+                            <option value="homme">Homme</option>
+                            <option value="femme">Femme</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>Date de naissance</label>
+                        <input type="date" class="form-control" placeholder="Date" formControlName="dateNaissance">
+                    </div>
+                </div>
+                <div class="col"> </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>Ville de naissance</label>
+                        <input type="text" class="form-control" placeholder="ville de naissance"
+                            formControlName="villeFR">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group ar-info">
+                        <label>مكان الازدياد</label>
+                        <input type="text" class="form-control" placeholder="مكان الازدياد" formControlName="villeAr">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>Pays de nationalité</label>
+                        <select class="form-select" formControlName="pays">
+                            <option value="maroc">Maroc</option>
+                            <option value="etranger">Etranger</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col"> </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <div class="form-outline fr-info">
+                        <label class="form-label">Adresse</label>
+                        <input type="text" class="form-control" formControlName="Addresse" placeholder="Adresse">
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>Code Postal</label>
+                        <input type="text" class="form-control" placeholder="Code Postal" formControlName="codePostal">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>N° Téléphone</label>
+                        <input type="text" class="form-control" placeholder="N° Téléphone" formControlName="telephone">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group fr-info email">
+                        <label>Email</label>
+                        <input type="email" class="form-control" placeholder="Email" formControlName="email">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group fr-info ">
+                        <label>Moyen de transport</label>
+                        <input type="text" class="form-control" placeholder="Moyen de transport"
+                            formControlName="moyenTransport">
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col">
+                    <div class="form-outline fr-info handicape">
+                        <label>Handicape</label>
+                        <select class="form-select" formControlName="handicape" placeholder="Handicape">
+                            <option value="oui">Oui</option>
+                            <option value="non">Non</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>Activités sportives</label>
+                        <input type="text" class="form-control" placeholder="Activités sportives"
+                            formControlName="activiteSportive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="titel">
+            <h4>Informations du Bac</h4>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>Année d'obtention de bac</label>
+                        <input type="text" class="form-control" placeholder="Année Bac" formControlName="anneeBac">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group fr-info serie">
+                        <label>Serie du Bac</label>
+                        <input type="text" class="form-control" placeholder="Serie du Bac" formControlName="serieBac">
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>Mention</label>
+                        <input type="text" class="form-control" placeholder="Mention du Bac"
+                            formControlName="mentionBac">
+                    </div>
+                </div>
+                <div class="col"> </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>Lycée d'obtention du Bac</label>
+                        <input type="text" class="form-control" placeholder="Lycée d'obtention du bac"
+                            formControlName="lyceeBac">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group fr-info province">
+                        <label>Province du Bac</label>
+                        <input type="text" class="form-control" placeholder="Province du Bac"
+                            formControlName="provinceBac">
+                    </div>
+                </div>
+            </div>
+            <br>
+
+        </div>
+        <br>
+        <div class="titel">
+            <h4>Informations du vaccin Covid-19</h4>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>Type de vaccin</label>
+                        <input type="text" class="form-control" placeholder="Type de vaccin"
+                            formControlName="typeVaccin">
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>Nombre de doses</label>
+                        <input type="text" class="form-control" placeholder="Nombre de doses" formControlName="nbDose">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>Date de premiére dose</label>
+                        <input type="date" class="form-control" placeholder="Date de premiére dose"
+                            formControlName="datePremiereDose">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group fr-info">
+                        <label>Date de deuxiéme dose</label>
+                        <input type="date" class="form-control" placeholder="Date de deuxiéme dose"
+                            formControlName="dateDeuxiemeDose">
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+            <div class="col text-center">
+                <button type="submit" class="btn btn-primary" style="text-align: center;">S'inscrire</button>
+            </div>
+            <br>
+        </div>
+    </form>
+</div>

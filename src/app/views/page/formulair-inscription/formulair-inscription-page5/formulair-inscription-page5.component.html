@@ -1,0 +1,259 @@
+<form [formGroup]="formulairInscription">
+    <div class="titel">
+        <p>Situation familiale</p>
+    </div>
+    <div class="container">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="situationFamiliale" formControlName="situationFamiliale">
+            <label class="form-check-label">
+                Célibataire
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="situationFamiliale" formControlName="situationFamiliale">
+            <label class="form-check-label">
+                Marié(e)
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="situationFamiliale" formControlName="situationFamiliale">
+            <label class="form-check-label">
+                Divorcé(e)
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="situationFamiliale" formControlName="situationFamiliale">
+            <label class="form-check-label">
+                Veuf(ve)
+            </label>
+        </div>
+    </div>
+    <div class="titel">
+        <p>Informations bancaires</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>j'ai mon RIB :</label>&nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="rib" formControlName="rib">
+                    <label>Oui</label>
+                    &nbsp; &nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="rib" formControlName="rib">
+                    <label>Non</label>
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Relevé d'indentité bancaire.</label>
+                    <input type="text" class="form-control" placeholder="Relevé d'indentité bancaire" formControlName="releveBancaire">
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Mon numéro RIB</label>
+                    <input type="text" class="form-control" placeholder="Mon numéro RIB" formControlName="numRib">
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+    </div>
+
+    <div class="titel">
+        <p>Informations sur pére</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>j'ai CIN pére :</label>&nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="dejaCinPere" formControlName="dejaCinPere">
+                    <label>Oui</label>
+                    &nbsp; &nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="dejaCinPere" formControlName="dejaCinPere">
+                    <label>Non</label>
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Numéro CIN pére</label>
+                    <input type="text" class="form-control" placeholder="Numéro CIN pére" formControlName="numCinPere">
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Nom du pére </label>
+                    <input type="text" class="form-control" placeholder="Nom du pére" formControlName="nomPere">
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Prénom du pére </label>
+                    <input type="text" class="form-control" placeholder="Prénom du pére" formControlName="prenomPere"> 
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Date de naissance du pére </label>
+                    <input type="text" class="form-control" placeholder="Date de naissance du pére"  formControlName="dateNaissancePere">
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Pére en vie :</label>&nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="viePere"  formControlName="viePere">
+                    <label>Oui</label>
+                    &nbsp; &nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="viePere" formControlName="viePere">
+                    <label>Non</label>
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+    </div>
+
+    <div class="titel">
+        <p>Informations sur Mére</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>j'ai CIN Mére :</label>&nbsp; &nbsp;
+                    <input class="form-check-input" type="dejaCinMere" name="cin" formControlName="dejaCinMere">
+                    <label>Oui</label>
+                    &nbsp; &nbsp; &nbsp;
+                    <input class="form-check-input" type="dejaCinMere" name="cin" formControlName="dejaCinMere">
+                    <label>Non</label>
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Numéro CIN Mére</label>
+                    <input type="text" class="form-control" placeholder="Numéro CIN Mére" formControlName="numCinMere">
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Nom du Mére </label>
+                    <input type="text" class="form-control" placeholder="Nom du Mére" formControlName="nomMere">
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Prénom du Mére </label>
+                    <input type="text" class="form-control" placeholder="Prénom du Mére" formControlName="prenomMere">
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Date de naissance du Mére </label>
+                    <input type="text" class="form-control" placeholder="Date de naissance du Mére" formControlName="dateNaissanceMere">
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Mére en vie :</label>&nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="mereVie" formControlName="mereVie">
+                    <label>Oui</label>
+                    &nbsp; &nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="mereVie" formControlName="mereVie">
+                    <label>Non</label>
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+    </div>
+
+    <div class="titel">
+        <p>Informations couverture social (si vous etre inscrit à l'AMO-E l'annés derniére, choise non) :</p>
+    </div>
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>J'ai déjà une converture :</label>&nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="dejaConverture" formControlName="dejaConverture">
+                    <label>Oui</label>
+                    &nbsp; &nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="dejaConverture" formControlName="dejaConverture">
+                    <label>Non</label>
+                    &nbsp; &nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="dejaConverture" formControlName="dejaConverture">
+                    <label>Inscrit et l'immatriculation à l'AMO-E</label>
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group fr-info">
+                    <label>Nom du Converture </label>
+                    <select class="form-select" formControlName="nomConverture">
+                        <option selected>Open this select menu</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col"> </div>
+        </div>
+        <div class="col text-center">
+            <button type="submit" class="btn btn-primary">Suivant</button>
+        </div>
+    </div>
+</form>
